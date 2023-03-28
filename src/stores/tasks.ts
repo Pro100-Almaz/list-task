@@ -1,6 +1,11 @@
 import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 
+export interface task {
+  id: number;
+  text: String;
+}
+
 export interface ToDo {
   currentTodo: string;
   listTodos: String[];
