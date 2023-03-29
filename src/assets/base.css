@@ -39,8 +39,6 @@ body {
 section {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5em;
 }
 
 h3 {
@@ -173,7 +171,7 @@ input:checked ~ .bubble::after {
 }
 
 .todo-list .list {
-  margin: 1rem 0;
+  padding: 0;
 }
 
 .todo-list .todo-item {
@@ -231,4 +229,15 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input {
   text-decoration: line-through;
   color: var(--grey);
+}
+
+.todo-item.to-show {
+  display: none;
+}
+
+.actions .delete {
+  background-color: var(--danger);
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  align-self: flex-end;
 }
